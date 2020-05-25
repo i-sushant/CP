@@ -1,0 +1,71 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ultrafast",
+            "request": "launch",
+            "mainClass": "Bitmanipulation.Ultrafast",
+            "projectName": "CodingBlocksCP_bf2a30d8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ConnectedComponents",
+            "request": "launch",
+            "mainClass": "Graph.ConnectedComponents",
+            "projectName": "CodingBlocksCP_bf2a30d8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DFS",
+            "request": "launch",
+            "mainClass": "Graph.DFS",
+            "projectName": "CodingBlocksCP_bf2a30d8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BFS",
+            "request": "launch",
+            "mainClass": "Graph.BFS",
+            "projectName": "CodingBlocksCP_bf2a30d8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BigIntDemo",
+            "request": "launch",
+            "mainClass": "Maths1.BigIntDemo",
+            "projectName": "CodingBlocksCP_bf2a30d8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - unlock",
+            "request": "launch",
+            "mainClass": "STL.challenges.unlock",
+            "projectName": "CodingBlocksCP_bf2a30d8"
+        },
+        {
+            "name": "g++.exe - Build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "g++.exe build active file"
+        }
+    ]
+}
