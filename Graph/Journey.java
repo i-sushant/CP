@@ -1,6 +1,7 @@
 package Graph;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Journey<T> extends Graph<T> {
     public static void main(String[] args) {
@@ -10,10 +11,10 @@ public class Journey<T> extends Graph<T> {
 
     ArrayList<Integer> a = new ArrayList<>();
 
-    long find(){
+    long find() {
         long total = getNcR(10, 2);
         long same = 1;
-        for(int x : a){
+        for (int x : a) {
             same += getNcR(x, 2);
         }
         return total - same;
@@ -53,7 +54,6 @@ public class Journey<T> extends Graph<T> {
 
     void dfs(T src) {
         Map<T, Boolean> visited = new HashMap<>();
-
         l.keySet().forEach(key -> visited.put(key, false));
         for (var p : l.values()) {
             T node = p.getFirst();

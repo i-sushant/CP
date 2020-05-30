@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Boston",
+            "request": "launch",
+            "mainClass": "Maths.Challenges.Boston",
+            "projectName": "CodingBlocksCP_bf2a30d8"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Ultrafast",
             "request": "launch",
             "mainClass": "Bitmanipulation.Ultrafast",

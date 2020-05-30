@@ -22,7 +22,7 @@ int main()
                 }
             }
 
-            if (setBits & 1) {
+            if (setBits & 1) { //if setBits is even number then least significant bit will always be 0 , so this consition will fail
                 ans += n / denom;
             } else {
                 ans -= n / denom;

@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 void multiply(int* a, int& n, int no)
 {
@@ -32,5 +32,5 @@ void big_factorial(int n)
 
 int main()
 {
-    big_factorial(155);
+    big_factorial(1000);
 }
