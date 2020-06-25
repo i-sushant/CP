@@ -18,7 +18,7 @@ int linearsearch(int* a, int i, int n, int key)
 {
     if (i == n)
         return -1;
-    int i = linearsearch(a, i + 1, n);
+    int i = linearsearch(a, i + 1, n, key);
     if (a[i] == key) {
         return i;
     }

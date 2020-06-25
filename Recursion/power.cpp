@@ -11,6 +11,13 @@ int power(int n, int k)
     }
     return subprob * subprob;
 }
+int slow_power(int a, int n)
+{
+    if (n == 0) {
+        return 1;
+    }
+    return a * slow_power(a, n - 1);
+}
 int main()
 {
     cout << power(2, 3) << endl;
