@@ -23,3 +23,8 @@ void printFactors(int n)
         cout << p.first << "^" << p.second << endl;
     }
 }
+
+int main()
+{
+    printFactors(196);
+}
