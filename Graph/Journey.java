@@ -1,12 +1,10 @@
 package Graph;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Journey<T> extends Graph<T> {
     public static void main(String[] args) {
         Journey<Integer> j = new Journey<Integer>();
-
     }
 
     ArrayList<Integer> a = new ArrayList<>();
@@ -43,13 +41,9 @@ public class Journey<T> extends Graph<T> {
     }
 
     static long __gcd(long n1, long n2) {
-        long gcd = 1;
-        for (int i = 1; i <= n1 && i <= n2; ++i) {
-            if (n1 % i == 0 && n2 % i == 0) {
-                gcd = i;
-            }
-        }
-        return gcd;
+        if (n2 == 0)
+            return n1;
+        return __gcd(n2, n1 % n2);
     }
 
     void dfs(T src) {

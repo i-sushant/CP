@@ -17,6 +17,7 @@ int query(int* tree, int s, int e, int qs, int qe, int idx)
     //complete overlap
     if (s >= qs and e <= qe)
         return tree[idx];
+    //no overlap
     if (qe < s || qs > e)
         return INT_MAX;
     //Partial overlap
@@ -25,7 +26,7 @@ int query(int* tree, int s, int e, int qs, int qe, int idx)
     int right = query(tree, mid + 1, e, qs, qe, 2 * idx + 1);
     return min(left, right);
 }
-void rangeUpdate(int* tree,  int s, int e, int l, int r, int val, int idx)
+void rangeUpdate(int* tree, int s, int e, int l, int r, int val, int idx)
 {
     //out of bound
     if (l > e || r < s)
