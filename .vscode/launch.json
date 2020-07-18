@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Swayamvar",
+            "request": "launch",
+            "mainClass": "TCS.Swayamvar",
+            "projectName": "CodingBlocksCP_bf2a30d8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DoleOutCadbury",
+            "request": "launch",
+            "mainClass": "TCS.DoleOutCadbury",
+            "projectName": "CodingBlocksCP_bf2a30d8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GroovingMonkeys",
+            "request": "launch",
+            "mainClass": "TCS.GroovingMonkeys",
+            "projectName": "CodingBlocksCP_bf2a30d8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Dijkstra",
+            "request": "launch",
+            "mainClass": "Graph.ShortestPath.Dijkstra",
+            "projectName": "CodingBlocksCP_bf2a30d8"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - InterleavedString",
             "request": "launch",
             "mainClass": "Recursion5.InterleavedString",

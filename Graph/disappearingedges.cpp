@@ -5,9 +5,8 @@ int main()
     int n, m, k;
     cin >> n >> m >> k;
     vector<int> v[n + 2];
-    multiset<int> s[n + 2];
-    int t[100003];
-    for (int i = 0; i <= 100002; i++) {
+    int t[m + 2];
+    for (int i = 0; i <= m + 1; i++) {
         t[i] = 1000000000;
     }
     vector<pair<int, int>> edge[m + 2];
@@ -26,7 +25,6 @@ int main()
     queue<int> q;
     int x;
     int dist[n + 1];
-    int visit[n + 1];
     for (i = 0; i <= n; i++) {
         dist[i] = 1000000007;
     }
@@ -35,7 +33,10 @@ int main()
     while (!q.empty()) {
         x = q.front();
         q.pop();
+        int sz = v[x].size();
         for (i = 0; i < v[x].size(); i++) {
+            int edge_no = v[x][i];
+            int timing = t[edge_no];
             if (t[v[x][i]] <= dist[x]) {
                 continue;
             }
